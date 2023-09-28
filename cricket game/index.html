@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Open+Sans&family=Orbitron:wght@500;600&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+ 
+            <p>Team: A vs B</p>
+            <!-- <input type="number" placeholder="Ball Num.." />
+            <button id="over">Ball</button> -->
+
+            <div class="screen">
+                click ⚾
+            </div>
+            <div class="response">
+                <div class="same_group">
+                    <span class="score">0</span>
+                    <span> / </span>
+                    <span class="wicket">0</span>
+                </div>
+                <span class="ball">20</span>
+            </div>
+            <div class="control">
+                <button style="--i:'⚾';--rgb:150,0,0;" data-id="0"></button>
+                <!-- <button style="--i:'1';--rgb:34,166,179;" data-id="1"></button>
+                <button style="--i:'2';--rgb:34,166,179;" data-id="2"></button>
+                <button style="--i:'3';--rgb:34,166,179;" data-id="3"></button>
+                <button style="--i:'4';--rgb:41,128,185;" data-id="4"></button>
+                <button style="--i:'6';--rgb:39,174,96;" data-id="6"></button> -->
+            </div>
+            <button onclick="abid()" class="play">Play Again</button>
+            <footer>@abidhasan:DEV🏏</footer>
+        </div>
+        <div class="winTextContainer">
+            <h2></h2>
+        </div>
+        <div class="innings_container">
+            <div class="inningsName"></div>
+            <div class="result">
+                <table>
+                    <tr>
+                        <td>Run</td>
+                        <td class="res_run">0</td>
+                    </tr>
+                    <tr>
+                        <td>Ball</td>
+                        <td class="res_ball">0</td>
+                    </tr>
+                    <tr>
+                        <td>wicket</td>
+                        <td class="res_wicket">0</td>
+                    </tr>
+                    <tr>
+                        <td>Extra</td>
+                        <td class="res_extra">0</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="nextBtnContainer">
+                <button>Next</button>
+            </div>
+
+        </div>
+        
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
